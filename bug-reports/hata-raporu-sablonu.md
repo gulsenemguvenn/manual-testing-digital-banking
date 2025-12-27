@@ -1,24 +1,46 @@
-\# Hata Raporu Şablonu
+#  Hata Raporu Şablonu
 
+---
 
+##  Özet (Summary)
+(Hatanın kısa ve net açıklaması)
 
-\## Özet (Summary)
+---
 
-\## Ortam (Environment)
+## Ortam (Environment)
+- **İşletim Sistemi:**
+- **Tarayıcı:**
+- **Uygulama / Ortam:**
 
-\## Ön Koşullar
+---
 
-\## Yeniden Üretme Adımları (Steps to Reproduce)
+##  Ön Koşullar
+(Hatanın oluşması için gerekli koşullar)
 
-\## Gerçek Sonuç (Actual Result)
+---
 
-\## Beklenen Sonuç (Expected Result)
+##  Yeniden Üretme Adımları (Steps to Reproduce)
+1.
+2.
+3.
 
-\## Şiddet (Severity)
+---
 
-\## Öncelik (Priority)
+##  Gerçek Sonuç (Actual Result)
+(Sistemin mevcut davranışı)
 
-\## Kanıt / Ek (Screenshot, video, log)
+---
 
+##  Beklenen Sonuç (Expected Result)
+(Sistemin doğru davranışı)
 
+---
 
+##  Şiddet & Öncelik
+- **Şiddet (Severity):**
+- **Öncelik (Priority):**
+
+---
+
+##  Kanıt / Ek (Screenshot, Video, Log)
+(Ekran görüntüsü, video veya log dosyası)

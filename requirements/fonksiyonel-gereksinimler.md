@@ -1,46 +1,54 @@
-\# Fonksiyonel Gereksinimler – Dijital Bankacılık
+# Fonksiyonel Gereksinimler – Dijital Bankacılık
 
+Bu doküman, dijital bankacılık uygulamasının
+**manuel test çalışmaları kapsamında** ele alınan
+fonksiyonel gereksinimlerini içermektedir.
 
+---
 
-\## FG-01 Giriş (Login)
+## FG-01 – Giriş (Login)
 
-\- Kullanıcı, e-posta ve şifre ile giriş yapabilmelidir.
+### Açıklama
+Kullanıcının sisteme güvenli şekilde giriş yapabilmesini sağlayan fonksiyonlardır.
 
-\- Kullanıcı 5 kez üst üste hatalı şifre girerse hesap 15 dakika kilitlenmelidir.
+### Gereksinimler
+- Kullanıcı, **e-posta ve şifre** ile giriş yapabilmelidir.
+- Kullanıcı **5 kez üst üste hatalı şifre** girerse hesap **15 dakika kilitlenmelidir**.
+- Başarılı giriş sonrası kullanıcı **Hesap Görüntüleme** ekranına yönlendirilmelidir.
 
-\- Başarılı giriş sonrası kullanıcı Hesap Görüntüleme ekranına yönlendirilmelidir.
+---
 
+## FG-02 – Hesap Görüntüleme
 
+### Açıklama
+Kullanıcının kendisine ait hesap bilgilerini görüntüleyebilmesini sağlayan fonksiyonlardır.
 
-\## FG-02 Hesap Görüntüleme
+### Gereksinimler
+- Kullanıcı, kendisine ait **hesap listesini** görüntüleyebilmelidir.
+- **IBAN bilgisi**, maskeleme yöntemi ile gösterilmelidir.
+- Kullanıcının **toplam bakiyesi**, doğru şekilde hesaplanarak gösterilmelidir.
 
-\- Kullanıcı, kendisine ait hesap listesini görüntüleyebilmelidir.
+---
 
-\- IBAN bilgisi maskeleme yöntemi ile gösterilmelidir.
+## FG-03 – Para Transferi
 
-\- Kullanıcının toplam bakiyesi doğru şekilde hesaplanarak gösterilmelidir.
+### Açıklama
+Kullanıcının başka bir hesaba para transferi yapabilmesini sağlayan fonksiyonlardır.
 
+### Gereksinimler
+- Kullanıcı, **alıcı IBAN** ve **tutar bilgilerini** girerek para transferi yapabilmelidir.
+- Transfer tutarı **0’dan büyük** olmalıdır.
+- **Günlük transfer limiti 50.000 TL** olmalıdır.
+- **Yetersiz bakiye** durumunda işlem reddedilmeli ve kullanıcıya uygun hata mesajı gösterilmelidir.
+- Başarılı transfer işlemi **İşlem Geçmişi** ekranında görüntülenmelidir.
 
+---
 
-\## FG-03 Para Transferi
+## FG-04 – İşlem Geçmişi
 
-\- Kullanıcı, alıcı IBAN ve tutar bilgilerini girerek para transferi yapabilmelidir.
+### Açıklama
+Kullanıcının geçmişte yaptığı işlemleri görüntüleyebilmesini sağlayan fonksiyonlardır.
 
-\- Transfer tutarı 0’dan büyük olmalıdır.
-
-\- Günlük transfer limiti 50.000 TL olmalıdır.
-
-\- Yetersiz bakiye durumunda işlem reddedilmeli ve kullanıcıya uygun hata mesajı gösterilmelidir.
-
-\- Başarılı transfer işlemi İşlem Geçmişi ekranında görüntülenmelidir.
-
-
-
-\## FG-04 İşlem Geçmişi
-
-\- Kullanıcı, son 90 güne ait işlem geçmişini görüntüleyebilmelidir.
-
-\- Kullanıcı, tarih aralığına göre filtreleme yapabilmelidir.
-
-
-
+### Gereksinimler
+- Kullanıcı, **son 90 güne ait** işlem geçmişini görüntüleyebilmelidir.
+- Kullanıcı, işlem geçmişini **tarih aralığına göre filtreleyebilmelidir**.
